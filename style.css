@@ -1,0 +1,166 @@
+#main {
+  margin-top: 50px;
+  margin-left: 56px;
+}
+
+#dropdownParent {
+  border: 1px solid black;
+  position: absolute;
+  z-index: 99;
+  max-height: 308px;
+  white-space: nowrap;
+  overflow: scroll;
+  overflow-x: hidden;
+}
+
+#dropdownElements {
+  position: relative;
+}
+
+.autocomplete-items div {
+  cursor: pointer;
+  background-color: #fff;
+  border-bottom: 1px solid #d4d4d4;
+}
+.autocomplete-items div:hover {
+  background-color: #e9e9e9;
+}
+
+#base {
+  overflow: hidden;
+  margin-left: 0px;
+  white-space: nowrap;
+/*   width: 780px; */
+  font-size: 13px;
+}
+
+#name {
+  padding: 0.1323cm;
+  border: 2px solid black;
+  border-right: 0px;
+  width: 3.043cm;
+  display: inline-block;
+  margin-left: 0%;
+  text-align: left;
+  white-space: normal;
+}
+
+#description {
+  white-space: normal;
+  margin: 0px;
+  padding: 0.1323cm;
+  border: 2px solid black;
+  border-right: 0px;
+/*   width: 10.052cm; */
+  width: 9.352cm;
+  display: inline-block;
+  text-align:left;
+}
+
+#quantity {
+  white-space: normal;
+  padding: 0.1323cm;
+  border: 2px solid black;
+  border-right: 0px;
+  width: 1.535cm;
+  display: inline-block;
+  text-align:left;
+}
+
+#price {
+  white-space: normal;
+  padding: 0.1323cm;
+  border: 2px solid black;
+  border-right: 0px;
+  width: 1.535cm;
+  display:inline-block;
+  text-align:left;
+}
+
+#total {
+  white-space: normal;
+  padding: 0.1323cm;
+  border: 2px solid black;
+  border-right: 0px;
+  width: 1.535cm;
+  display: inline-block;
+  text-align:left;
+}
+
+#delete {
+  white-space: normal;
+  padding: 0.1323cm;
+  border: 2px solid black;
+  width: 1.535cm;
+  display: inline-block;
+  text-align:left;
+}
+
+
+span:hover{
+  background-color: yellow;
+}
+
+span:active {
+  background-color:red;
+}
+
+#line {
+/*   margin: -1px; */
+/*   margin-top: 43px;*/
+  margin-top: 40px;
+  position: absolute;
+/*   width: 100%; */
+  width: 20.4cm;
+  border-bottom: 2px solid black;
+/*   display: inline-block; */
+}
+
+#indent {
+  position: absolute;
+  left: 560px;
+}
+
+#indentSmall {
+  position: absolute;
+  left: 280px;
+}
+
+@media priA4 {
+/*   html {
+    size: A4;
+  } */
+    body {
+        margin-top: 0px;
+        margin-left: 0px;
+      transform: scale(1);
+      transform-origin: 0 0;
+    }
+    #main {
+      margin-top: 50px;
+      margin-left: 56px;
+    }
+    #description
+    {
+      display: inline-block;
+    }
+  }
+
+div{
+       page-break-inside: avoid;
+}
+
+.floatLeft {
+  float: left;
+  margin-right: 60px;
+}
+
+.clear {
+  clear: both;
+}
+
+
+
+/* @page {
+    margin: 0;
+} */

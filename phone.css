@@ -1,0 +1,35 @@
+@media(max-width: 768px)
+{
+  #main {
+    margin-top: 10px;
+    margin-left: 10px;
+  }
+  #description
+  {
+    display: none;
+  }
+  #line
+  {
+    width: 9.8cm;
+  }
+  #name 
+  {
+    width: 2cm;
+    white-space: nowrap;
+  }
+  #indentSmall
+  {
+    position: inline-block;
+    left: 40%;
+  }
+  #customer
+  {
+    overflow-x: hidden;
+    width: 220px;
+  }
+  /*
+  #indent {
+    position: inline-block;
+    left: 0px;
+  } */
+}

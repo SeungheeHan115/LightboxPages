@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <script type="text/javascript" src="script.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <link href="phone.css" rel="stylesheet" type="text/css" />
+  <link rel="apple-touch-icon" href="logo.png"/>
+</head>
+
+<body id="main" onload="onDocLoad()">
+
+  <div class="floatLeft">
+  
+    <form id="boxQ" name="boxQuantity">
+    <input type="number" min="1" step="1" value=1> : How many lightboxes are you ordering<br> <br>
+    </form>
+
+    <form id="boxH" name="boxHeight">
+    <input type="text" name="height" value=0 min="0"> : Height of Box<br>  <br>
+    </form>
+
+    <form id="boxW" name="boxWidth">
+    <input type="text" name="width" value=0 min="0"> : Width of Box
+    </form>
+
+    <p>
+    <select id="boxS">
+      <option>1</option>
+      <option>2</option>
+      <option>4</option>
+    </select>
+    : How many sides
+    </p>
+
+    <p>
+      <select id="boxT">
+      <option>LF-0050-SWSV-3000</option>
+      <option>LF-0065-SWSV-3000</option>
+      <option>LF-0090-SWSV-3000</option>
+      <option>LF-0100-SWSV-3000</option>
+      <option>LF-0120-DSSV-3000</option>
+      <option>LF-0156-DSSV-3000</option>
+    </select>
+    : Box Type
+    </p>
+    
+  </div>
+
+  <div class="floatLeft">
+      <select id="discountType">
+        <option>None</option>
+        <option>Percent</option>
+        <option>Flat Amount</option>
+      </select>
+      : Discount Type, if any
+    <br><br>
+    
+    <div id=DiscountText>
+      <input id="Discount" type="number" value=0> : Discount, if any   </input>
+    </div>
+
+    <br><br>
+      <input id="customerInput" type="text" autocomplete="off"> : Customer Name </input>
+  </div>
+
+
+  <div class="clear">
+  </div>
+
+  <div id="base">
+    <div id="errors"> </div>
+    <bdi id="indentSmall">
+      <p id="customer"> </p>
+    </bdi>
+    <p id="cost"> </p>
+    <bdi id="line"> </bdi>
+    <p id="name"> Item <br>
+    <p id="description"> Description <br>
+
+    <p id="price"> Price <br>
+    <p id="quantity"> Quantity <br>
+    <p id="total"> Total <br>
+    <p id="delete"> Delete <br>
+      <!--     <p id = "discount"> Discount <br> -->
+  </div>
+
+
+  <br>
+  <div id="buttons">
+    <button onclick="addEstimate();">New Estimate</button>
+    <button onclick="emptyTable();">Clear Estimates</button>
+    <button onclick="printHelper();">Export Table</button>
+  </div>
+
+  <br><br>
+</body>
+
+</html>
